@@ -40,9 +40,10 @@ If you're willing to help, you can clone the up-to-date GitHub repo: https://git
 GitHub Desktop. I advise to create a dedicated conda environment for this and install PyMoDAQ's package as a
 developer:
 
-* ``conda create -n dev_env``
-* ``conda activate dev_env``
+
 * ``cd`` to the location of the folder where you downloaded or cloned the repository.
+* ``conda env create --name=pymodaq_dev --file=environment.yml``
+* ``conda activate pymodaq_dev``
 * install the package as a developer using the command ``pip install -e .``.
 
 Any change on the code will be *seen* by python interpreter. When ready, you can ask to push your code into the main
